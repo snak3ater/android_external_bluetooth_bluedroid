@@ -11,8 +11,11 @@ LOCAL_C_INCLUDES:= $(LOCAL_PATH)/common \
                    $(LOCAL_PATH)/../utils/include \
                    $(bdroid_C_INCLUDES) \
 
+<<<<<<< HEAD
 LOCAL_CFLAGS += -Werror $(bdroid_CFLAGS)
+=======
 LOCAL_CFLAGS += -Werror -Wno-error=unused-parameter $(bdroid_CFLAGS)
+>>>>>>> 22d3bf9... GCC-4.8+ Build Fix
 
 ifeq ($(BOARD_HAVE_BLUETOOTH_BCM),true)
 LOCAL_CFLAGS += \
